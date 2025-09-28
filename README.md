@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# AI-Powered Interview Assistant
 
-## Project info
+A modern React application that simulates AI-powered interviews.
+Candidates can take timed interviews via chat, while interviewers can monitor progress through a dashboard, all with local data persistence.
 
-**URL**: https://lovable.dev/projects/79bb0aa2-680a-46db-976d-5a3c8ac7428f
+## 🚀 Features
+Interviewee (Chat)
 
-## How can I edit this code?
+📄 Upload resume (PDF required, DOCX optional)
 
-There are several ways of editing your application.
+📝 Auto-extract Name, Email, Phone; chatbot prompts for missing fields
 
-**Use Lovable**
+⏱️ Timed interview flow (6 AI-generated questions):
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/79bb0aa2-680a-46db-976d-5a3c8ac7428f) and start prompting.
+2 Easy → 20s each
 
-Changes made via Lovable will be committed automatically to this repo.
+2 Medium → 60s each
 
-**Use your preferred IDE**
+2 Hard → 120s each
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✅ Auto-submit answers when time expires
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+📊 AI generates final score and short summary
 
-Follow these steps:
+Interviewer (Dashboard)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+📋 View all candidates with final scores and summaries
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🔍 Search and sort candidates
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🖱️ Click a candidate to see:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Full chat history
 
-**Edit a file directly in GitHub**
+Profile details
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+AI-generated evaluation summary
 
-**Use GitHub Codespaces**
+Persistence
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+💾 Local data storage via Redux + Redux-Persist or IndexedDB
 
-## What technologies are used for this project?
+🔄 Resume paused interviews with “Welcome Back” modal
 
-This project is built with:
+## 🛠️ Tech Stack
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+React
 
-## How can I deploy this project?
+Redux + Redux-Persist (state & persistence)
 
-Simply open [Lovable](https://lovable.dev/projects/79bb0aa2-680a-46db-976d-5a3c8ac7428f) and click on Share -> Publish.
+TypeScript
 
-## Can I connect a custom domain to my Lovable project?
+TailwindCSS + shadcn-ui (UI components)
 
-Yes, you can!
+pdf-parse (PDF resume parsing)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+docx (DOCX resume parsing)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+react-timer-hook (timers per question)
+
+## 🔗 Demo Link
+
+[Live Preview]()
