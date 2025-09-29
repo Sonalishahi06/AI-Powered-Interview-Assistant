@@ -61,3 +61,7 @@ react-timer-hook (timers per question)
 ## 🔗 Demo Link
 
 [Live Preview](https://ai-powered-interview-assistant-opal.vercel.app/)
+
+## 🎥 Demo Video
+[Watch the video](https://drive.google.com/file/d/1JpdCOsMsWP-3wFsvR1gseYIoQf9bE4nQ/view?usp=sharing)
+
